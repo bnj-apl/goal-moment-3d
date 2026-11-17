@@ -1,8 +1,8 @@
 {
   "site": "https://bnj-apl.github.io/goal-moment-3d/",
   "product_film_included": true,
-  "file_count": 49,
-  "total_bytes": 302787359,
+  "file_count": 53,
+  "total_bytes": 337471354,
   "files": [
     {
       "file": "app.js",
@@ -70,9 +70,19 @@
       "sha256": "8207c8f94020d97335613ed96a6938555581f6b8c7b59b215ffdd5875f079622"
     },
     {
+      "file": "delivery/print-samples.zip",
+      "bytes": 31374083,
+      "sha256": "b5acee377ff7d728cb61f60e99e3c45736802f7cafbd965e424868b81f73ff05"
+    },
+    {
       "file": "delivery/制作与打样说明.html",
-      "bytes": 10976,
-      "sha256": "30e8817e087ced057079e523fbc73ef49c679b6c94ddf6a7e8c6d08081ddedc8"
+      "bytes": 13139,
+      "sha256": "edd36377f14989ad49e9de139ca092fee10fdf731c62bf3fc4e42847463c528a"
+    },
+    {
+      "file": "delivery/标签与二维码-1比1.html",
+      "bytes": 13712,
+      "sha256": "d799a3a92d301b97033c00ede7de40fb9378d8e506911d7e096eee962a88b00a"
     },
     {
       "file": "index.html",
@@ -176,53 +186,63 @@
     },
     {
       "file": "renders/card-detail.png",
-      "bytes": 2839826,
-      "sha256": "0aa25dd91d11f575c848cb76ac1dec664165f14efd54276b8decf413db5802d1"
+      "bytes": 2839276,
+      "sha256": "66f86bb9402caf83eb50755f46c3cc4ca78d67eb1f837de834ba226eb30f3a6d"
     },
     {
       "file": "renders/card-front.png",
-      "bytes": 2537603,
-      "sha256": "d6f8f729a8c31504d5cc14f6a6654f73967de7493cd0e4d7f76b215dfe2b28b8"
+      "bytes": 2537053,
+      "sha256": "3ead620e3a62d9e72ba7cb4e56891d95ad570e3c2c70abbfc769a4a00cab249f"
     },
     {
       "file": "renders/card-rear.png",
-      "bytes": 2157748,
-      "sha256": "01202d87d86441eaec3839450cbd583ae7a2c52597879ea63f8d5d8cdde74f7d"
+      "bytes": 2157198,
+      "sha256": "0d4095afb6ebf02e1ff9875fcb0a0f8bdeebced384da987b919d14bd9a5ed4c9"
     },
     {
       "file": "renders/diorama-bottom-qr.png",
-      "bytes": 2121203,
-      "sha256": "6c388ce22f3cac4a21edc88d6a287e382c459244137be413a96bf917db4fb5ad"
+      "bytes": 2120653,
+      "sha256": "4acf1253a75629eac042fd3bf9d46da1c354c4b4276604153ba94319fb4dae21"
     },
     {
       "file": "renders/diorama-detail.png",
-      "bytes": 2448048,
-      "sha256": "a9d4186760fac5d9e949fe39b265292fe0899d378e5d8bcc51cf0b9ff94b6536"
+      "bytes": 2447498,
+      "sha256": "4b890c96c0200db35b3bb6f260a7f77203779f50eadc9670c9326a96c2cd660b"
     },
     {
       "file": "renders/diorama-front.png",
-      "bytes": 2310400,
-      "sha256": "1ec160bdadb25df19abb900168f28ed1fd6b3b6e1302e02912bd30db517be8cd"
+      "bytes": 2309850,
+      "sha256": "56fe0b57b12777966ee9d978ffd5a30eb3acb6233c7a4cc014276db28236dddc"
     },
     {
       "file": "renders/diorama-rear.png",
-      "bytes": 2370190,
-      "sha256": "0c9da7382de1d59da5e03952d2045d875567891ffc2f6901d5f1f02d45503827"
+      "bytes": 2369640,
+      "sha256": "8e4382205a17554e842c11786f654f45a07731784d8e536d091723bc40c77ef1"
     },
     {
       "file": "renders/hero-card.png",
-      "bytes": 2543226,
-      "sha256": "cbc23b3824616711584ba4514d3e0c2d7fc8ed79146b16e4f07a115f1c064d28"
+      "bytes": 2542676,
+      "sha256": "1268d3c5113b8cbd8af7628eeadbe5377ce409a528a056aad2e85b030f50be3f"
     },
     {
       "file": "renders/hero-diorama.png",
-      "bytes": 2377223,
-      "sha256": "e1aeb1375415859319d316cf09614732a3ddce099b1aa6987ca8c10f9e8ab8a3"
+      "bytes": 2376673,
+      "sha256": "7e42c9225b7efc765665aa7f62a47c8376e841e66e219a926072a47488e260de"
     },
     {
       "file": "renders/pair.png",
-      "bytes": 1986643,
-      "sha256": "4b056009e035865eeda3409f69acd705c18608fbbb5970e9804032daacb981e3"
+      "bytes": 1986093,
+      "sha256": "8a53238ed182a117d57dce896bc4dd55542f93dc56fa1580f4ab10481f5dcf05"
+    },
+    {
+      "file": "renders/print-assembly.png",
+      "bytes": 2073013,
+      "sha256": "06707c6d4c24425d551a415ba28b1365827d4acb235c6dfe6ddbed4ac965b7c9"
+    },
+    {
+      "file": "renders/print-connection-side.png",
+      "bytes": 1226101,
+      "sha256": "623c50204d0eceff31e0c998cd5bc6f6023cf59f0be60103b79e39730beff87f"
     },
     {
       "file": "styles.css",
@@ -231,8 +251,8 @@
     },
     {
       "file": "product-contract.json",
-      "bytes": 3275,
-      "sha256": "34215f1ccbe85e627e6a234f9c520e4cc5448b3a082f2eac2ab757bb32a0d3c1"
+      "bytes": 3698,
+      "sha256": "218d9b306195e999d7a42b926d290b0bff530246fe8bb0927b5bea5bac014c7b"
     },
     {
       "file": "evidence/media-provenance.json",

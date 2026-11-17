@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOMENT90 · 标签与二维码 · 1:1 A4 贴花试样</title>
+<style>
+  :root { color-scheme: light; font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: #152332; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e8ecf0; }
+  .instructions { max-width: 210mm; margin: 22px auto 18px; padding: 18px 22px; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px #1523320c; }
+  .instructions h1 { margin: 0 0 8px; font-size: 20px; }
+  .instructions p { margin: 7px 0; font-size: 14px; line-height: 1.65; }
+  button { margin-top: 8px; padding: 10px 18px; color: white; background: #152b43; border: 0; border-radius: 6px; font: inherit; cursor: pointer; }
+  .paper { width: 210mm; height: 297mm; margin: 0 auto 26px; padding: 14mm; background: #fff; overflow: hidden; box-shadow: 0 5px 30px #10203020; }
+  .masthead { border-bottom: .3mm solid #b9a47a; padding-bottom: 5mm; }
+  .brand { margin: 0 0 2mm; font-size: 16pt; letter-spacing: .6mm; font-weight: 700; }
+  .title { margin: 0; font-size: 12pt; font-weight: 600; }
+  .subtle { font-size: 8pt; color: #596671; line-height: 1.6; margin: 2mm 0 0; }
+  section { margin-top: 8mm; }
+  h2 { font-size: 10pt; margin: 0 0 3mm; font-weight: 700; }
+  .qr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+  .qr-item { height: 62mm; border: .2mm solid #d6dde3; padding: 4mm; display: flex; flex-direction: column; align-items: center; }
+  .item-title { margin: 0 0 3mm; font-size: 9pt; font-weight: 700; }
+  .qr-stage { height: 34mm; display: flex; align-items: center; justify-content: center; }
+  .qr { display: block; object-fit: contain; flex: none; background: white; outline: .15mm solid #d6dde3; outline-offset: 0; }
+  #qr-chip { width: 29mm; height: 29mm; }
+  #qr-celebration { width: 32mm; height: 32mm; }
+  .qr-size { margin: 3mm 0 0; font-size: 8pt; }
+  .qr-hint { margin: 1mm 0 0; font-size: 7pt; color: #65717d; }
+  .plates { display: grid; grid-template-columns: 72mm 1fr; gap: 8mm; align-items: start; }
+  .plate-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 2.5mm; }
+  .dimension { font-size: 8pt; color: #566370; margin: 0; }
+  .nameplate, .player-tag { display: block; overflow: visible; flex: none; }
+  .small-tags { display: flex; gap: 8mm; align-items: center; }
+  .calibration { border-top: .2mm solid #d6dde3; border-bottom: .2mm solid #d6dde3; padding: 5mm 0; display: flex; gap: 10mm; align-items: center; }
+  #ruler { display: block; width: 50mm; height: 10mm; flex: none; overflow: visible; }
+  .calibration p { margin: 0; font-size: 8pt; line-height: 1.7; }
+  .paper-notes { margin-top: 8mm; font-size: 8pt; line-height: 1.9; color: #4a5865; }
+  .paper-notes p { margin: 0 0 1.5mm; }
+  .footer { margin-top: 7mm; padding-top: 3mm; border-top: .2mm solid #d6dde3; color: #69757f; font-size: 7pt; line-height: 1.6; }
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    html, body { width: 210mm; height: 297mm; background: white; }
+    body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .instructions { display: none !important; }
+    .paper { margin: 0; box-shadow: none; break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<aside class="instructions">
+  <h1>打印前先设置：A4 · 100% 实际大小</h1>
+  <p>选择 A4 纵向，缩放设为 <strong>100%</strong>，关闭页眉和页脚；不要选择“适合页面”。如需深蓝底与参考金色，请开启“背景图形”。</p>
+  <p><strong>先打印一张，量下方校准尺：</strong>两端刻线必须正好相距 50 mm，再裁切贴花。屏幕显示大小不代表纸面实测大小。</p>
+  <p>两枚二维码直接使用已发布体验入口的原图，白边包含在标注尺寸内。此页只辅助上色与贴花，不是人物背景整卡印刷稿。</p>
+  <button type="button" onclick="window.print()">打印这张 A4 样稿</button>
+</aside>
+<main class="paper" aria-label="A4 装饰贴花试样">
+  <header class="masthead">
+    <p class="brand">MOMENT90</p>
+    <p class="title">标签与二维码 · 1:1 装饰贴花试样</p>
+    <p class="subtle">A4 / 210 × 297 mm · 尺寸样稿，尚未做实物印刷验收</p>
+  </header>
+
+  <section aria-labelledby="qr-heading">
+    <h2 id="qr-heading">01 / 二维码贴纸</h2>
+    <div class="qr-grid">
+      <article class="qr-item">
+        <p class="item-title">挑射卡 · THE CHIP</p>
+        <div class="qr-stage"><img id="qr-chip" class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkwAAAJMAQAAAAAgH8RuAAAFhklEQVR4nO2da5LjKgyF4dT8t3fQ+1/W3YFZAVO8sTPdSIn72iHnq1SauMWp2IkKCwlivTkJh7OUjKGUHChsB1BKDhS2AyglBwrbAZSSA4XtAErJgcJ2AKXkQGE7gFJyoLAdQCk5UNgOoNQk18pWVmOcTUfqc2ise5tDl995V2eAU1QilJIDhe2Aj5FafCK/dNYsvvc1/190xsX7zbR23+XmJ3gCOEMkQSk5+BwpWwe4NftaojW8N87aL79zz/VtTvBl8LpEgVJyMLvUn8dD3q3WGB8a1htjFx+GvcXbZQsvwxAZGr/5rkApMZCbjqDUXa6VjSNdHhBdvAtdfAgMXXzEf/3/7+pZ8HTPByglBwrbT5cyOaarwV10sRD0bTniy7ejS3S94oCHLoHtnicISomB3HQEpfTXyuU5ztBevP0Kjxobprapbpjiwb5LL3UCoJQYyE1HUOrKeNB3h1IYGIgN3zW8s+lx6HL2uwKlxEBuOoJSl14rF7OBa3uE29F4IxraLQERR8Zk78KkKOdFnwLPdfsXlJolHjRdAFgTEykbGNu+hoQlM5i7l16MB9//ywBKXZ6b8Mbk6C7lIyIhN7FsdgnJwWoTsxWbXbbOkp+gHChsB1BqknEw0Q98eTQsY6Ivt6aZODPDcXCuLwModXluwnRHktO15+1fx3cNfoJyoLAdQKmp4kHftfuxL+cNlzz27bozHpznywBKXXitvI85wVj/mdrpeH655jrtPDPTTc786rs6A5yiEqGUHChsP13KtLGvxoN11EscamO2FkLuCmZ4L/r2XwZQ6vrchMke18a77F8mt1NgWOZq6r/og0qg7fA9lJqnTsbGHEQtgKklMd6tdQ2FiWbBH1NOf5fFuOcJglJiIDcdQSm1D9ridPlwW6+UXcyW1GFe0BSXOHnXVg/ysmuAyvpHKDVRvegSPC6PboXglWlwdGtL0IfU/FZd8hfeFSglBnLTEZS6ej+ZNTdCfBdnQdOiiVxH+lWS9SmN6OzDQnt+gnKgsB1AqbnWD24t/74rg+m9r5vGCbR5m3ueICglBnLTEZRS4Cu1Sq0c7ydF/UO+vjovfVAPnujzDZSabt3Elg/2Q+QuObjtMvWsVZvoywBK3aFWzVSPqzta9CvoTVfAxvzg8+CFvgcoNdu9qO9ivbZysFiGP7VwtNbSMB6c5MsASl07J2Pq7WVf/VLc83EcrJEgfVAPnujzDZR692tlmpc9Vql1EaLpFwyWjowH5/oygFKX18mYuF6+3+C3FKRth+1/+6q21OYnqAEq6x+h1Cx7WSzF+1KNaClOy44ZTWI7F9JU76vFbHc9QVBKDOSmIyilwB8WItW4r4SBx1XzWzy43+uJOXol0Hb4HkrNc618/EmX9Bxex60L28+7rHkbw7TtYWr3Of37n+DL4HWJAqXk4JPiwTUviAgOGOK+FPHlW1AXK0hDY033n20lxfnvCpQSA7npCEpdv69aomX9asawlsekLt1OpNmS9aI6oLT/AUrNMw5mlq1tZV/GuzzSLWEQrHuQ1qlRzsnM8mUApa68VksZBOs22iUeTP+3XyEw7MPAfTDIT1AFdOY/Qal59tm2JQ8YMg79L7xUC9et7i3zNv7uJwhKiYHcdASlXrpWvi7gNW1Vr4lTpmHsiz+HXYPEzjF52eVAYTuAUhP+FrbpKmHS7hYJm57rD08c9/u95wmCUmIgNx1BqWd80JdGv3dT/Z2XwLKFORlnfdqBza17N+RllwOF7QBKzeKDrsV6eaozVcukzdO66dDspDld2KpG73qCoJQYyE1HUEqOffg53WdxvOxyoLAdQCk5UNgOoJQcKGwHUEoOFLYDKCUHCtsBlJIDhe0ASsmBwnYApeRAYTuAUnKgsH1Lqb/L+vb5ZuTMYgAAAABJRU5ErkJggg==" alt="挑射卡真实体验二维码"></div>
+        <p class="qr-size">29 × 29 mm · 含原图白边</p>
+        <p class="qr-hint">扫码打开挑射瞬间</p>
+      </article>
+      <article class="qr-item">
+        <p class="item-title">庆祝摆件 · THE CELEBRATION</p>
+        <div class="qr-stage"><img id="qr-celebration" class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkwAAAJMAQAAAAAgH8RuAAAFhklEQVR4nO2da66jMAyFE2v+0x10/8u6OyAr8ChxXjCdxmYYQdPzqeql1BxdUiIH2wme3UkEOkvJOUjpIYPtAEjpIYPtAEjpIYPtAEjpIYPtAEjpIYPtAEjpIYPtAEjpIYPtAEjpIYPtAEhN0la+8nD+Ub4M3oW4r247F7/NZt0h/+m/OgM6RSUBKT1ksP12KccJt3DbWNPO1cnO9lVliTs3h0T7e54gQUoN6U1HQOpIW/nm0RILRyeY9sT3EJ2gdMy/HIJm10MG2wGQ+vS2+vVyr1/W2OWW1Qdfuxw7553jtIc/5gQJUmpIbzoCUv/UVj65tjgiTa+4/ZPvBJnZP5t/HEodhSClhvSmIyB1sR/kurWsLniOY9FHfE/uzy0c38MjDkple+8N8QvqIYPtAEjN0lYhxzjlk39yjHzK+yN1wEfe3+4Ht4fc/QRPgM4QESClh77ED3K3i1MaQt7jRupuLDGZ9J7jM//xvyJIqSG96QhIXZmb4LXbk3ITfZJCPjoJlvaH9MkL5CYMkMX4PZCa6H4wPOJL7v5CibmER+59ofm+Ovrcbt/zBAlSakhvOgJSBrh3apL+6zKA1Q9yiZHKzuYlK/CDBshi/B5ITdUHnWThSy6+H6A66XqlV+Y9kr9AH5zkYiBIXTkWXWLWLybly0cfM/XxvTpFL3/SeDXmL2Rnc5r4BfWQwXYApGZpq+D9Mw84+9JQXlORdnrV4aiUrkWeKXuImu3JLoYToDNEvs4P+p1fk6yE+EfJTfSpefGGpXTt7P+KIKWG9KYjIHX9vAnXRVrqtIg6aYLrdonbbMIyiMkYIIvxeyA1VX6Q+8hncoJ1P/dxmBImrXFU9MEpLgaC1LV9kIsfzN6w5imq10tsZjBVe/hBG2S0fwOkJuqDa+tZmyRg7+/WLoFYu2FWuOcJEqTUkN50BKTMMRkv/S4FWLwUhRbypIngm1mXm0BM5hB07LBXQOrT28rlEeYfrm3nIrl3l9v4DPzgLBcDQer6+0HXVpJ5XUKztFqaflCKsagRsh7wdyD16W3lqkfL3a2PvdRkfclc1EPq7WF37D1PkCClhvSmIyB1dE2nZ6kFDV4qZOq41KU94gpl3q4scPFS6p8hSKkhvekISF1aJxNiwVkrhqkuLxWR1ilLnMpmZIpTZGFfgjP4BS2QyfotkJpoXbUl9ibOEwljZ9yZcuqnUsgt8wqlort0w3ueIEFKDelNR0Dq2Bxe3y/f1BeFZg+45HrROL1CHKIcmAXQ7HrIYDsAUpO0le/WM6zTJTaEdvfX7gQ3mcRbn+AZ0CkqCUjpoa+Liy7dDKYakNnlLFp9WqeAuOjHXwwEqStz9K4l33cdc1O6xt1KF/v+iF9QDxlsB0BqlrZa0gqikncoizjF7fqYCZcGqJKV2M6zKFMq7n2CJ0BniAiQ0kPftc52yPWieXU1ocRIfQmc1q/8B5wgQUoN6U1HQMoA1wFnHWr29TDdnSBv5xhGuiegYSxqgUzWb4HUXDGZRI237OpCuasp7eu6cT84y8VAkLo2JpPZraddI6Xc1Y5203sbiMkYIIvxeyA1zZpOq/zdPVApJ+vrak51/W08b2LCi4Egdavn8HKXsPDey5gzFnX/pBBNeU49nkd/CDp22CsgNWNbLa2LNYLnnzh1Qrbz7WEqmEFuYuaL4SB09MAvlPr1cm+rFy2LV/jyMNCam4gLcXeD2LueIEFKDelNR0DqSFtxfZCEFG/LuLQ8hdCVaEx+DGgNlrZZhGh2PWSwHQCpCeOi3NWLbpaOcZvFDOUj8oMTXQwEqSvayv/xON2jBPyCeshgOwBSeshgOwBSeshgOwBSeshgOwBSeshgOwBSeshgOwBSeshgOwBSeshgOwBSeshg+5FSvwEc8AfP2VrvyAAAAABJRU5ErkJggg==" alt="庆祝摆件真实体验二维码"></div>
+        <p class="qr-size">32 × 32 mm · 含原图白边</p>
+        <p class="qr-hint">扫码打开庆祝瞬间</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="plate-heading">
+    <h2 id="plate-heading">02 / 文字名牌</h2>
+    <div class="plates">
+      <div class="plate-wrap">
+        <p class="dimension">挑射卡名牌 · 56 × 14 mm</p>
+        <svg id="plate-chip" class="nameplate" xmlns="http://www.w3.org/2000/svg" width="56mm" height="14mm" viewBox="0 0 56 14" role="img" aria-label="MOMENT90 THE CHIP 2015 名牌">
+          <rect x=".1" y=".1" width="55.8" height="13.8" fill="#152b43" stroke="#c3cbd3" stroke-width=".2"/>
+          <rect x=".8" y=".8" width="54.4" height="12.4" fill="none" stroke="#b58b3f" stroke-width=".25"/>
+          <text x="28" y="6.1" text-anchor="middle" fill="#d4b477" font-family="Arial,sans-serif" font-size="4" font-weight="700" letter-spacing=".35">MOMENT90</text>
+          <text x="28" y="10.5" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="2.5" letter-spacing=".2">THE CHIP / 2015</text>
+        </svg>
+      </div>
+      <div class="plate-wrap">
+        <p class="dimension">庆祝摆件名牌 · 82 × 14 mm</p>
+        <svg id="plate-celebration" class="nameplate" xmlns="http://www.w3.org/2000/svg" width="82mm" height="14mm" viewBox="0 0 82 14" role="img" aria-label="MOMENT90 THE CELEBRATION 2015 名牌">
+          <rect x=".1" y=".1" width="81.8" height="13.8" fill="#152b43" stroke="#c3cbd3" stroke-width=".2"/>
+          <rect x=".8" y=".8" width="80.4" height="12.4" fill="none" stroke="#b58b3f" stroke-width=".25"/>
+          <text x="41" y="6.1" text-anchor="middle" fill="#d4b477" font-family="Arial,sans-serif" font-size="4" font-weight="700" letter-spacing=".35">MOMENT90</text>
+          <text x="41" y="10.5" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="2.5" letter-spacing=".2">THE CELEBRATION / 2015</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="messi-heading">
+    <h2 id="messi-heading">03 / MESSI 小标签</h2>
+    <div class="small-tags">
+      <svg class="player-tag" xmlns="http://www.w3.org/2000/svg" width="18mm" height="6mm" viewBox="0 0 18 6" role="img" aria-label="深蓝底 MESSI 18乘6毫米标签">
+        <rect x=".1" y=".1" width="17.8" height="5.8" fill="#152b43" stroke="#c3cbd3" stroke-width=".2"/>
+        <text x="9" y="4.1" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="3.1" font-weight="700" letter-spacing=".35">MESSI</text>
+      </svg>
+      <svg class="player-tag" xmlns="http://www.w3.org/2000/svg" width="18mm" height="6mm" viewBox="0 0 18 6" role="img" aria-label="白底 MESSI 18乘6毫米标签">
+        <rect x=".1" y=".1" width="17.8" height="5.8" fill="#fff" stroke="#c3cbd3" stroke-width=".2"/>
+        <text x="9" y="4.1" text-anchor="middle" fill="#152b43" font-family="Arial,sans-serif" font-size="3.1" font-weight="700" letter-spacing=".35">MESSI</text>
+      </svg>
+      <p class="dimension">每枚 18 × 6 mm · 两种底色</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="ruler-heading">
+    <h2 id="ruler-heading">04 / 先量校准尺，再裁切</h2>
+    <div class="calibration">
+      <svg id="ruler" xmlns="http://www.w3.org/2000/svg" width="50mm" height="10mm" viewBox="0 0 50 10" aria-label="两端刻线间距50毫米校准尺" role="img">
+        <path d="M0 4H50 M0 1V6 M5 2.5V5 M10 1V6 M15 2.5V5 M20 1V6 M25 2.5V5 M30 1V6 M35 2.5V5 M40 1V6 M45 2.5V5 M50 1V6" stroke="#152332" stroke-width=".18" fill="none"/>
+        <g font-family="Arial,sans-serif" font-size="2.5" fill="#152332"><text x="0" y="9">0</text><text x="10" y="9" text-anchor="middle">10</text><text x="20" y="9" text-anchor="middle">20</text><text x="30" y="9" text-anchor="middle">30</text><text x="40" y="9" text-anchor="middle">40</text><text x="50" y="9" text-anchor="end">50</text></g>
+      </svg>
+      <p><strong>两端刻线间：50 mm</strong><br>若实测不等于 50 mm，请检查打印缩放后重新打印。</p>
+    </div>
+  </section>
+
+  <div class="paper-notes">
+    <p>沿二维码与文字名牌各自的浅灰外框裁切；二维码必须完整保留白边。</p>
+    <p>贴到模型前先试摆、试扫，避免曲面折痕、强反光和透明涂层遮住二维码。</p>
+    <p>此页“金色”只是普通彩色印刷参考色，不代表金属油墨、烫金或电镀效果。</p>
+  </div>
+  <footer class="footer">MOMENT90 · 装饰贴花试样 / 非实物印刷验收<br>仅用于尺寸、配色和贴花位置试验；实体打印与 NFC 标签写入需另行验证。</footer>
+</main>
+</body>
+</html>
