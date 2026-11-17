@@ -1,8 +1,8 @@
 {
   "site": "https://bnj-apl.github.io/goal-moment-3d/",
-  "product_film_included": false,
-  "file_count": 47,
-  "total_bytes": 280853399,
+  "product_film_included": true,
+  "file_count": 49,
+  "total_bytes": 302787359,
   "files": [
     {
       "file": "app.js",
@@ -71,8 +71,8 @@
     },
     {
       "file": "delivery/制作与打样说明.html",
-      "bytes": 10625,
-      "sha256": "1898c802f2cb71a32311bad864b9fa2f95a6af4c6ad8b2d2036a60aef6579649"
+      "bytes": 10976,
+      "sha256": "30e8817e087ced057079e523fbc73ef49c679b6c94ddf6a7e8c6d08081ddedc8"
     },
     {
       "file": "index.html",
@@ -138,6 +138,16 @@
       "file": "media/game-shot.jpg",
       "bytes": 190487,
       "sha256": "ed7d90e01cf5f127a56f515190cd5668da32914dc6a5e69d2b04226e817d5d93"
+    },
+    {
+      "file": "media/product-film-poster.jpg",
+      "bytes": 155306,
+      "sha256": "2aefd5b96a79b757060465691bb1221109866ddf198dddbcbcf4221a9f392294"
+    },
+    {
+      "file": "media/product-film.mp4",
+      "bytes": 21778303,
+      "sha256": "dd8aa935c25caf770ab5d3322cecb780aacbf0729ccb1065c39517e62f1cf763"
     },
     {
       "file": "media/real-celebration.jpg",
