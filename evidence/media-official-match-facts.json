@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-16T18:27:44.980980+00:00",
+  "sources": [
+    {
+      "publisher": "UEFA",
+      "title": "Messi double puts Barça in control against Bayern",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0221-0e909116af7b-fe3ef95b6374-1000--messi-double-puts-barca-in-control-against-bayern/",
+      "observed_publication_date": "2015-05-06",
+      "verified_facts": [
+        "Champions League semi-final first leg",
+        "FC Barcelona 3–0 FC Bayern München",
+        "Messi goals77 and80 minutes; second goal made score2–0",
+        "Messi received Rakitić pass, beat Boateng and chipped Neuer",
+        "Camp Nou"
+      ]
+    },
+    {
+      "publisher": "FC Barcelona",
+      "title": "FC Barcelona - FC Bayern München | UEFA Champions League Semi-finals",
+      "url": "https://www.fcbarcelona.com/en/matches/10441/fc-barcelona-fc-bayern-munchen-uefa-champions-league-2014-15",
+      "verified_facts": [
+        "Wednesday6May",
+        "Messi77 and80 minutes",
+        "Neymar90+4 minutes",
+        "Final score3–0",
+        "20:45CEST kickoff"
+      ],
+      "historical_name_note": "Current template labels stadiumSpotify Camp Nou. For2015 use historical nameCamp Nou, corroborated by contemporaryUEFA article."
+    },
+    {
+      "publisher": "FC Barcelona",
+      "title": "FC Barcelona3 - Bayern Munich0 (1minute)",
+      "url": "https://www.fcbarcelona.com/en/barca-play/videos/816822/fc-barcelona-3-bayern-munich-0-1-minute",
+      "status": "Official highlights page accessible; player media was not downloaded or authenticated; not the source of delivered clips"
+    }
+  ],
+  "summary_zh": "2015年5月6日（巴塞罗那当地日期），诺坎普，欧冠半决赛首回合；梅西第80分钟打入个人第二球，比分2–0，终场3–0。",
+  "rights_statement": "Fact verification from official sites does not establish broadcast, image, likeness or game-asset commercial rights.",
+  "public_copy_note": "Development-local paths removed. This is a non-official digital product prototype; physical and commercial acceptance are not asserted."
+}

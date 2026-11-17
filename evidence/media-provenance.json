@@ -1,0 +1,330 @@
+{
+  "schema": "moment90-product-media-v1",
+  "created_at": "2026-11-16T18:30:20.805137+00:00",
+  "status": "encoded_structurally_verified_and_visually_reviewed",
+  "source_files": {
+    "real40": {
+      "path": "archive-goal-reference-40s-1080p.mp4",
+      "sha256": "856cd88b74f7f6f5844abafe7b9cd92d3789fe9b7869aa934aa849f9add2db98",
+      "metadata": {
+        "duration_s": 40.0,
+        "frames": 1000,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [
+          "aac"
+        ],
+        "bytes": 61108303
+      },
+      "archived_full_match_start_s": 5450
+    },
+    "real80": {
+      "path": "archive-goal-reference-80s-1080p.mp4",
+      "sha256": "426979d9cc567547dac55e00cecaf38fc8aab9b682515d5f6f4d09b02314d8f2",
+      "metadata": {
+        "duration_s": 80.0,
+        "frames": 2000,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [
+          "aac"
+        ],
+        "bytes": 126556756
+      },
+      "archived_full_match_start_s": 5430
+    },
+    "game40": {
+      "path": "match40-clarity02.mp4",
+      "sha256": "297a28c451399abcf5c14ad934d910b17f473aba3702accd1d6cf48001700cf2",
+      "metadata": {
+        "duration_s": 40.0,
+        "frames": 1000,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [],
+        "bytes": 34661070
+      },
+      "archived_full_match_start_s": null
+    }
+  },
+  "outputs": {
+    "shot-real.mp4": {
+      "source_id": "real40",
+      "source_segments_s": [
+        [
+          14.2,
+          22.2
+        ]
+      ],
+      "kind": "real_broadcast_excerpt",
+      "metadata": {
+        "duration_s": 8.0,
+        "frames": 200,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [
+          "aac"
+        ],
+        "bytes": 11955938,
+        "sha256": "07e28e9865857ecf429ddc5ba1fbcfb5cd40f160c4bcd166a0d443215ef3ea20"
+      }
+    },
+    "game-moment.mp4": {
+      "source_id": "game40",
+      "source_segments_s": [
+        [
+          14.2,
+          22.2
+        ]
+      ],
+      "kind": "game_asset_3d_previsualization",
+      "metadata": {
+        "duration_s": 8.0,
+        "frames": 200,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [],
+        "bytes": 8999931,
+        "sha256": "26fc2f65d7c6ca1f9a600736439f2ecdb0e00822c3f7e7ef8b03f99fddd2fa2c"
+      }
+    },
+    "celebration-game.mp4": {
+      "source_id": "game40",
+      "source_segments_s": [
+        [
+          23.6,
+          31.6
+        ]
+      ],
+      "kind": "game_asset_3d_previsualization",
+      "metadata": {
+        "duration_s": 8.0,
+        "frames": 200,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [],
+        "bytes": 8954073,
+        "sha256": "75e7b0e64847847798156b8bc9369d963d7e880a8c429646ebb6dd1b203d894c"
+      }
+    },
+    "celebration-real.mp4": {
+      "source_id": "real80",
+      "source_segments_s": [
+        [
+          49.8,
+          51.96
+        ],
+        [
+          67.32,
+          70.36
+        ],
+        [
+          77.2,
+          80.0
+        ]
+      ],
+      "output_segments_s": [
+        [
+          0,
+          2.16
+        ],
+        [
+          2.16,
+          5.2
+        ],
+        [
+          5.2,
+          8
+        ]
+      ],
+      "kind": "editorial_montage_of_real_broadcast_excerpts",
+      "edit_disclosure_zh": "三段真实转播节选：叠抱→起身→梅西与内马尔拥抱；省略了期间其他转播镜头。",
+      "metadata": {
+        "duration_s": 8.0,
+        "frames": 200,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [
+          "aac"
+        ],
+        "bytes": 17035261,
+        "sha256": "006e4183285fdd6e64850af9516624d53b823e416a12296ae99575d07b23bb74"
+      },
+      "boundary_refinement": "Shift the earliest huddle cut to reduce centered foreground obstruction; authentic partial foreground occlusion remains. End rising section before opponent reaction cut."
+    },
+    "real-shot.jpg": {
+      "source_id": "real40",
+      "description": "Right-foot chip just after release; original high broadcast camera",
+      "source_time_s": 18.12,
+      "source_frame_zero_based": 453,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b65036527415690aa1077a4fe8c2f1489e62ffb6feb666339bf226a5bc7c46f5",
+      "processing": "Exact decoded video frame; no AI image generation or frame interpolation"
+    },
+    "real-celebration.jpg": {
+      "source_id": "real80",
+      "description": "Messi and Neymar after embrace; original broadcast player caption visible",
+      "source_time_s": 79.96,
+      "source_frame_zero_based": 1999,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3cc13f4b5aa6416154bc403d6f1f713ea19b27221e1074e8415bd87d85586550",
+      "processing": "Exact decoded video frame; no AI image generation or frame interpolation"
+    },
+    "game-shot.jpg": {
+      "source_id": "game40",
+      "description": "Rendered interpretation of chip at matched approximate action time",
+      "source_time_s": 18.12,
+      "source_frame_zero_based": 453,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ed7d90e01cf5f127a56f515190cd5668da32914dc6a5e69d2b04226e817d5d93",
+      "processing": "Exact decoded video frame; no AI image generation or frame interpolation"
+    },
+    "game-celebration.jpg": {
+      "source_id": "game40",
+      "description": "Authored single Messi arm-raise; not the hidden real celebration trajectory",
+      "source_time_s": 24.8,
+      "source_frame_zero_based": 620,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "32ba6e86372fe91f64c65b5a62249855bf840326ac4f70b4327300a8f908ddbb",
+      "processing": "Exact decoded video frame; no AI image generation or frame interpolation"
+    },
+    "comparison.mp4": {
+      "source_ids": [
+        "real40",
+        "game40"
+      ],
+      "left_source_segments_s": [
+        [
+          12.4,
+          22.4
+        ]
+      ],
+      "right_source_segments_s": [
+        [
+          12.4,
+          22.4
+        ]
+      ],
+      "kind": "labelled_split_screen_editorial_comparison",
+      "timing": "Same approximate source action times; no time-warp or pixel registration",
+      "audio": "Original real broadcast audio only, with short fades; no simulated game sound",
+      "metadata": {
+        "duration_s": 10.0,
+        "frames": 250,
+        "width": 1920,
+        "height": 1080,
+        "fps": "25/1",
+        "codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "audio": [
+          "aac"
+        ],
+        "bytes": 8007841,
+        "sha256": "5980eb6de2443d8de17e070d052a0eb2554822155924e3696af8f471a3fabdcc"
+      }
+    },
+    "reference-real-40s.mp4": {
+      "method": "local hardlink to unchanged existing file",
+      "sha256": "856cd88b74f7f6f5844abafe7b9cd92d3789fe9b7869aa934aa849f9add2db98",
+      "source": "archive-goal-reference-40s-1080p.mp4",
+      "bytes": 61108303
+    },
+    "reference-game-40s.mp4": {
+      "method": "local hardlink to unchanged existing file",
+      "sha256": "297a28c451399abcf5c14ad934d910b17f473aba3702accd1d6cf48001700cf2",
+      "source": "match40-clarity02.mp4",
+      "bytes": 34661070
+    },
+    "comparison-poster.jpg": {
+      "source_time_s": 5.72,
+      "source_frame_zero_based": 143,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "75eb729fe132057e93f61da8145bfc2bc07b87d059610ab79a4d9c06dddfc659",
+      "processing": "Exact decoded video frame; no AI image generation or frame interpolation"
+    }
+  },
+  "match": {
+    "date_local": "2015-05-06",
+    "competition": "UEFA Champions League 2014/15",
+    "round": "Semi-final first leg",
+    "stadium_at_match": "Camp Nou",
+    "home": "FC Barcelona",
+    "away": "FC Bayern München",
+    "final_score": "3–0",
+    "goal": "Lionel Messi second goal",
+    "official_minute": 80,
+    "score_after_goal": "2–0",
+    "official_sources": [
+      "https://www.uefa.com/uefachampionsleague/news/0221-0e909116af7b-fe3ef95b6374-1000--messi-double-puts-barca-in-control-against-bayern/",
+      "https://www.fcbarcelona.com/en/matches/10441/fc-barcelona-fc-bayern-munchen-uefa-champions-league-2014-15"
+    ],
+    "clock_precision": "Official minute 80; event seconds18.04/19.12 in40s reference are local visual-analysis anchors, not official goal-line timing",
+    "stadium_note": "The live recording shows the 2015 stadium; the game scene uses the project’s reconstructed stadium and is not historical stadium validation"
+  },
+  "real_source_provenance": {
+    "catalog_url": "https://archive.org/details/2014-2015-ucl-semi-final",
+    "visible_broadcaster_mark": "Sky Sports 5 HD LIVE",
+    "source_catalog_local": "web-source-catalog.json",
+    "prior_extraction_audit": "reference-media-audit.json",
+    "verified_now": "Local SHA256 matches held source audit; visually inspected source contact sheets and critical frames",
+    "remote_archive_page_check": "Browser tool could not fetch item in this turn; exact original archive media filename not established here",
+    "official_match_sources_are_not_the_download_source": true
+  },
+  "rights": {
+    "real_broadcast": "Held third-party broadcast excerpt; no commercial/republication license verified",
+    "game_assets": "Existing PES/FL asset-derived render; no commercial license for underlying game assets, likenesses, kits or marks verified",
+    "official_pages": "Used to corroborate historical match facts; website access is not media licensing",
+    "publication": "Local product-development material only; no external publication performed"
+  },
+  "rendering": "Local CPU ffmpeg/libx264; no Mini GPU jobs and no cloud generation",
+  "limits": [
+    "Real celebration is a clearly disclosed three-excerpt edit, not a continuous8s take",
+    "The wide original broadcast shot limits small facial/foot details; no generated detail added",
+    "Game celebrations are authored interpretations and differ from observed real group huddle",
+    "Game clip retains known slipping/ground-contact and appearance limitations from clarity02"
+  ],
+  "visual_review": "media-visual-review.json",
+  "public_copy_note": "Development-local paths removed. This is a non-official digital product prototype; physical and commercial acceptance are not asserted."
+}

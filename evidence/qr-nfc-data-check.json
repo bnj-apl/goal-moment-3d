@@ -1,0 +1,33 @@
+{
+  "status": "digital_payloads_verified",
+  "items": [
+    {
+      "moment": "chip",
+      "qr_decoded": "https://bnj-apl.github.io/goal-moment-3d/?moment=chip&entry=qr",
+      "qr_image_px": [
+        588,
+        588
+      ],
+      "ndef_uri_decoded": "https://bnj-apl.github.io/goal-moment-3d/?moment=chip&entry=nfc",
+      "ndef_bytes": 60,
+      "ndef_valid_single_uri_record": true,
+      "qr_physical_scan_tested": false,
+      "nfc_physical_tap_tested": false
+    },
+    {
+      "moment": "celebration",
+      "qr_decoded": "https://bnj-apl.github.io/goal-moment-3d/?moment=celebration&entry=qr",
+      "qr_image_px": [
+        588,
+        588
+      ],
+      "ndef_uri_decoded": "https://bnj-apl.github.io/goal-moment-3d/?moment=celebration&entry=nfc",
+      "ndef_bytes": 67,
+      "ndef_valid_single_uri_record": true,
+      "qr_physical_scan_tested": false,
+      "nfc_physical_tap_tested": false
+    }
+  ],
+  "website_verification": "pending deployment; data encoding correctness does not prove public URL availability",
+  "public_copy_note": "Development-local paths removed. This is a non-official digital product prototype; physical and commercial acceptance are not asserted."
+}

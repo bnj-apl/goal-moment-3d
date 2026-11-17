@@ -1,0 +1,74 @@
+{
+  "product": "MOMENT90 — 把这一刻，带回家",
+  "version": "prototype-20261117",
+  "event": {
+    "match": "Barcelona v Bayern",
+    "date": "2015-05-06",
+    "moment": "Messi second goal, minute80, score2–0",
+    "stadium": "Camp Nou",
+    "stadium_asset": "New Camp Nou game-mod geometry interpreted as a contemporary collectible, not exact2015 architecture"
+  },
+  "moments": [
+    {
+      "id": "chip",
+      "name": "挑射定格",
+      "model": "assets/card-shot.glb",
+      "still": "media/game-shot.jpg",
+      "real": "media/shot-real.mp4",
+      "game": "media/game-moment.mp4",
+      "render": "renders/hero-card.png",
+      "model_basis": "Authored game reconstruction freeze at sourceframe452; reference-led, not measured motion capture"
+    },
+    {
+      "id": "celebration",
+      "name": "庆祝珍藏",
+      "model": "assets/diorama-celebration.glb",
+      "still": "media/game-celebration.jpg",
+      "real": "media/celebration-real.mp4",
+      "game": "media/celebration-game.mp4",
+      "render": "renders/hero-diorama.png",
+      "model_basis": "Native game celebration pose with material cleanup and product composition. Lux3D G1 candidate was generated and rejected after four-view review for likeness and shirt-detail loss; designed pose, not frame-exact broadcast pile-on."
+    }
+  ],
+  "comparison": "media/comparison.mp4",
+  "product_film": "media/product-film.mp4",
+  "qr_image": "assets/experience-qr.png",
+  "experience_url": "https://bnj-apl.github.io/goal-moment-3d/",
+  "nfc": {
+    "record_type": "NDEF URI",
+    "tag_recess_mm": 25,
+    "written_to_physical_tag": false,
+    "physical_tap_tested": false
+  },
+  "printing": {
+    "player_height_mm": 180,
+    "card_mm": [
+      100,
+      150,
+      20
+    ],
+    "plinth_mm": [
+      280,
+      220
+    ],
+    "status": "digital sample candidate; no physical print acceptance"
+  },
+  "future": {
+    "4dgs": "not produced; future research",
+    "interactive_game": "current lightweight parameter-driven prototype"
+  },
+  "content_status": "Private development/prototype assets. Source licenses and player/club usage clearance not asserted.",
+  "experience": {
+    "public_url": "https://bnj-apl.github.io/goal-moment-3d/",
+    "verified": false,
+    "deployment": "Pending full local acceptance; no remote website has been changed yet"
+  },
+  "lux3d": {
+    "candidate_generated": true,
+    "model": "G1",
+    "triangles": 288916,
+    "adopted_as_main_product": false,
+    "reason": "Face likeness and shirt marks degraded in reviewed candidate"
+  },
+  "public_copy_note": "Development-local paths removed. This is a non-official digital product prototype; physical and commercial acceptance are not asserted."
+}

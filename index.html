@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09101a">
+  <meta name="description" content="从梅西进球的一帧，到可以旋转查看、触碰回放的诺坎普立体收藏品。Moment90 产品数字样稿。">
+  <title>Moment90 · 把精彩留在手中</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">{"imports":{"three":"./lib/three.module.js","three/addons/":"./lib/addons/"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">跳到产品展示</a>
+  <header class="site-header shell">
+    <a class="brand" href="./" aria-label="Moment90 首页">MOMENT<span>90</span><i></i></a>
+    <nav aria-label="主导航"><a href="#collection">收藏品</a><a href="#replay">瞬间回放</a><a href="#play">上场试一脚</a></nav>
+    <span class="edition">THE MOMENT COLLECTION / 001</span>
+  </header>
+
+  <main>
+    <section class="hero shell" id="collection" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="gold-line"></span>梅西 × 诺坎普 · 产品数字样稿</p>
+        <h1 id="hero-title">把那个瞬间，<br><em>留在手中。</em></h1>
+        <p class="lead">一脚挑射，一次举臂。<br>从赛场影像，变成有深度的收藏。</p>
+        <div class="moment-tabs" role="group" aria-label="选择精彩瞬间">
+          <button type="button" data-moment="chip" aria-pressed="true"><span>01</span> 射门瞬间</button>
+          <button type="button" data-moment="celebration" aria-pressed="false"><span>02</span> 进球庆祝</button>
+        </div>
+        <div class="product-copy" aria-live="polite">
+          <p id="product-series" class="product-series">THE CHIP / 立体球星卡</p>
+          <h2 id="product-name">把一脚挑射，定格成一张卡。</h2>
+          <p id="product-description">人物、足球与看台分层呈现。从正面看一瞬间，从侧面看它的深度。</p>
+          <dl class="specs"><div><dt>设计尺寸</dt><dd id="product-size">100 × 150 mm</dd></div><div><dt>收藏形式</dt><dd id="product-format">立体球星卡</dd></div><div><dt>关联内容</dt><dd>真实参考 + 游戏回放</dd></div></dl>
+        </div>
+        <div class="hero-actions"><a class="primary button" href="#replay">重看这一刻 <span>↗</span></a><button class="text-button" id="open-film" type="button" disabled title="产品短片正在制作，完成后此处可观看">产品短片制作中</button></div>
+        <p id="entry-notice" class="entry-notice" hidden></p>
+      </div>
+      <div class="product-stage" id="product-stage">
+        <div class="stage-top"><span class="tiny-label">MOMENT90 · DIGITAL COLLECTIBLE</span><div class="stage-tags"><span class="sample-tag">数字样稿</span><button id="view-fullscreen" type="button" disabled>放大查看 ↗</button></div></div>
+        <div class="stage-media" id="model-wrap">
+          <img id="product-poster" src="renders/hero-card.png" alt="梅西射门立体球星卡的三维渲染效果" fetchpriority="high">
+          <div class="poster-unavailable" id="poster-unavailable" hidden><span class="outline-number">10</span><p>收藏品预览暂未载入</p><button type="button" id="retry-poster">重试效果图</button></div>
+          <div class="model-overlay" id="model-overlay"><span class="orbit-symbol" aria-hidden="true">⟳</span><button class="button glass" id="load-model" type="button">360° 旋转查看</button><p>拖动旋转 · 双指缩放</p></div>
+          <div id="model-status" role="status" aria-live="polite" hidden></div>
+          <div class="model-recovery" id="model-recovery" hidden><button type="button" class="button" id="retry-model">重新载入</button><button type="button" class="text-button" id="show-poster">看效果图</button></div>
+        </div>
+        <div class="stage-bottom"><span id="stage-caption">01 / THE CHIP</span><div class="viewer-controls" aria-label="三维查看控制"><button id="view-front" type="button" disabled>正面</button><button id="view-angle" type="button" disabled>斜侧</button><button id="auto-rotate" type="button" aria-pressed="false" disabled>自动旋转</button><button id="view-reset" type="button" disabled>重置</button></div></div>
+      </div>
+    </section>
+
+    <div class="journey-strip shell" aria-label="产品流程"><span><b>01</b> 捕捉一帧</span><i>→</i><span><b>02</b> 留住立体</span><i>→</i><span><b>03</b> 触碰回到现场</span></div>
+
+    <section class="section replay-section shell" id="replay" aria-labelledby="replay-title">
+      <div class="section-heading"><div><p class="eyebrow">THE MOMENT, AGAIN</p><h2 id="replay-title">让收藏品，继续讲述这一刻。</h2></div><p id="replay-description">同一个瞬间，两种观看方式。<br>左侧是比赛影像，右侧是三维游戏渲染。</p></div>
+      <div class="local-video-tools"><div><strong>也可以从自己的视频开始。</strong><p>仅在当前浏览器读取，选好画面后保存定格参考。</p></div><div><label class="button subtle file-choice" for="local-video-file">选择自己的视频 <span>＋</span><input id="local-video-file" type="file" accept="video/*"></label><button class="text-button" id="restore-reference" type="button" hidden>恢复精选比赛片段</button></div></div>
+      <div class="replay-grid">
+        <article class="film-card"><div class="film-label"><span class="dot live"></span><h3 id="real-video-title">真实比赛参考</h3><span id="real-scene-label">射门瞬间</span></div><video id="real-video" controls playsinline preload="none" poster="media/real-shot.jpg" src="media/shot-real.mp4" aria-label="真实比赛参考视频"></video><div class="capture-tools"><button type="button" class="capture-button" data-capture="real">定格这一帧 <span>＋</span></button><span>拖动进度条，选择你的瞬间</span></div><p id="real-media-status" class="media-status">原比赛片段 · 来源信息见页面下方</p></article>
+        <article class="film-card"><div class="film-label"><span class="dot digital"></span><h3>3D 游戏渲染</h3><span id="game-scene-label">射门瞬间</span></div><video id="game-video" controls playsinline preload="none" poster="media/game-shot.jpg" src="media/game-moment.mp4" aria-label="三维游戏渲染视频"></video><div class="capture-tools"><button type="button" class="capture-button" data-capture="game">定格这一帧 <span>＋</span></button><span>保存当前画面，作为建模参考</span></div><p id="game-media-status" class="media-status">参考动作复原 · 尚非写实或 4DGS 成片</p></article>
+      </div>
+      <div id="capture-result" class="capture-result" hidden aria-live="polite"><img id="capture-preview" alt="从当前视频实际截取的定格参考"><div><p class="eyebrow">YOUR FRAME</p><h3 id="capture-title">你的定格参考</h3><p id="capture-description"></p><div class="capture-actions"><a id="download-capture" class="button subtle" download>下载定格 PNG ↓</a><a href="#collection" class="text-button">查看已精修的精选瞬间 ↗</a></div><p class="quiet-note">此操作真实截取视频当前帧。上方3D收藏品为预制精选模型；任意新定格仍需进入后续建模与精修流程。</p></div></div>
+      <div class="replay-tools"><button class="button subtle" id="compare-film" type="button">看同屏对照 <span>↗</span></button><a class="text-button" href="media/reference-real-40s.mp4" target="_blank" rel="noopener">真实比赛参考 · 40 秒 ↗</a><a class="text-button" href="media/reference-game-40s.mp4" target="_blank" rel="noopener">3D 游戏重建 · 40 秒 ↗</a></div><p class="quiet-note">切换顶部瞬间，同时切换收藏品与关联回放。完整片段另页打开，保留进球前后的比赛情境。</p>
+    </section>
+
+    <section class="section shell physical-section" aria-labelledby="physical-title">
+      <div class="pair-picture"><img src="renders/pair.png" alt="梅西立体球星卡与诺坎普场景摆件的产品组合渲染" loading="lazy"><span>球星卡 × 场景摆件</span></div>
+      <div class="physical-copy"><p class="eyebrow">ONE MOMENT. TWO WAYS TO KEEP IT.</p><h2 id="physical-title">一张卡，<br>一座属于你的球场。</h2><p>卡片留下人物与看台的层次，桌面摆件把庆祝瞬间放进微缩诺坎普。英雄比例让人物成为主角，球场保留记忆里的空间。</p><div class="physical-facts"><div><span>立体球星卡</span><strong>100 × 150 mm</strong><small>分层人物、足球与看台</small></div><div><span>诺坎普场景摆件</span><strong>约 180 mm 人物</strong><small>约 280 × 220 mm 底座</small></div></div><p class="quiet-note">当前展示的是可旋转数字样稿。球场取自新诺坎普游戏模组，并非2015年建筑的精确复原。厚度、支撑、装配和上色仍需实物打样验证。</p><a class="text-button production-guide" href="delivery/制作与打样说明.html">制作与打样说明 <span>↗</span></a></div>
+    </section>
+
+    <section class="section shell touch-section" id="touch" aria-labelledby="touch-title">
+      <div class="touch-copy"><p class="eyebrow">TOUCH THE MOMENT</p><h2 id="touch-title">轻触或一扫，<br>记忆开始播放。</h2><p>将手机靠近底座的 NFC 标签，或扫描卡背二维码，打开与这件收藏品关联的瞬间。无需安装专属 App。</p><ol class="touch-steps"><li><span>1</span>解锁支持 NFC 的手机，靠近标签位置；也可用相机扫码。</li><li><span>2</span>点开系统弹出的链接，进入当前精彩瞬间。</li><li><span>3</span>看比赛、旋转收藏品，再亲自试一脚。</li></ol><p class="quiet-note">NFC 标签需要先写入体验网址，再进行真机触碰测试；此页不代表芯片已写入或实物已验证。</p></div>
+      <div class="access-card"><div class="nfc-mark" aria-hidden="true"><span>))</span><i></i></div><span class="tiny-label">YOUR MOMENT PASSPORT</span><div class="qr-frame"><img id="experience-qr" alt="Moment90 手机体验入口二维码" src="assets/experience-qr.png" loading="lazy"><p id="qr-pending" hidden>手机入口正在绑定</p></div><strong>把瞬间带到手机</strong><p id="share-status" role="status">体验入口待绑定</p><a class="button subtle" id="open-phone-link" hidden target="_blank" rel="noopener noreferrer">打开手机入口 ↗</a><button class="text-button" id="copy-link" type="button" disabled>复制当前瞬间链接</button></div>
+    </section>
+
+    <section class="section shell play-section" id="play" aria-labelledby="play-title">
+      <div class="section-heading"><div><p class="eyebrow">YOUR TURN</p><h2 id="play-title">这一次，由你起脚。</h2></div><p>选择方向、弧度和力度，看球能否进入球门。<br><span class="prototype">轻量互动原型</span> · 不是真实比赛模拟器</p></div>
+      <div class="game-layout"><div class="game-view" id="game-wrap"><div class="game-start" id="game-start"><span class="field-icon" aria-hidden="true">⊕</span><h3>把球送进门框内。</h3><p>拖动场内落点，或使用下方控制。</p><button class="button primary" id="start-game" type="button">开始练习</button></div><div id="game-score" class="game-score" hidden><span>进球 <b id="goal-count">0</b></span><span>尝试 <b id="shot-count">0</b></span></div><div id="game-result" class="game-result" role="status" aria-live="polite" hidden></div><div id="game-error" hidden role="status">当前设备无法启动互动球场，请换一台支持三维显示的设备。</div></div><div class="game-panel"><label for="aim-x">左右方向 <output id="aim-x-label">正中</output></label><input id="aim-x" type="range" min="-5" max="5" step="0.1" value="0" disabled><div class="range-ends"><span>左侧</span><span>右侧</span></div><label for="aim-height">挑射弧度 <output id="aim-height-label">1.5 m</output></label><input id="aim-height" type="range" min="0.3" max="4.5" step="0.1" value="1.5" disabled><div class="range-ends"><span>低球</span><span>高球</span></div><label for="power">射门力度 <output id="power-label">70%</output></label><input id="power" type="range" min="20" max="100" step="1" value="70" disabled><div class="range-ends"><span>轻触</span><span>大力</span></div><button class="button primary" id="shoot" type="button" disabled>射门 <span>↗</span></button><button class="text-button" id="reset-game" type="button" disabled>回到起点</button><p class="quiet-note">金色虚线预示当前参数下的轨迹。方向、弧度和力度都会改变球路；得分由球穿过门线的位置决定。</p></div></div>
+    </section>
+
+    <section class="section shell future-section"><div><p class="eyebrow">THE NEXT CHAPTER</p><h2>从“重看”，到“重新站在现场”。</h2></div><div><p>下一阶段探索 4DGS 多视角瞬间与更完整的球场互动。当前已能看回放、旋转数字收藏品和体验射门原型；尚未实现可自由走动的真实比赛重建。</p><span class="future-tag">4DGS · 待采集与验证</span><span class="future-tag">实物 NFC · 待写入与真机验证</span></div></section>
+  </main>
+
+  <footer class="site-footer shell"><div><a class="brand" href="./">MOMENT<span>90</span><i></i></a><p>把精彩留在手中。</p></div><div class="footer-notes"><p>研究与产品打样展示 · 非官方授权商品</p><details><summary>素材与当前边界</summary><p id="source-note">真实视频用于比赛参考；游戏渲染与人物、球场数字资产经过改造用于产品研究。素材出处及权利状态以交付清单为准，未据此取得商用授权。人物动作、表情和部分接地关系仍需打磨。</p><p>这一版本展示预先生成的模型与视频，不会把每次访问描述为实时生成。二维码打开网页不等于 NFC 芯片已完成写入。</p><a href="evidence/media-provenance.json" target="_blank" rel="noopener">查看素材记录 ↗</a></details></div></footer>
+
+  <dialog id="viewer-dialog" aria-label="放大查看数字收藏品"></dialog>
+  <dialog id="film-dialog" aria-labelledby="dialog-title"><div class="dialog-bar"><h2 id="dialog-title">Moment90 产品短片</h2><button id="close-dialog" type="button" aria-label="关闭视频">×</button></div><video id="dialog-video" controls playsinline preload="none" aria-label="产品展示与对照片"></video><p id="dialog-status" role="status"></p></dialog>
+  <noscript><div class="noscript">打开 JavaScript 后可旋转模型和进行射门练习。视频与产品效果图仍可直接观看。</div></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

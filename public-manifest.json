@@ -1,0 +1,238 @@
+{
+  "site": "https://bnj-apl.github.io/goal-moment-3d/",
+  "product_film_included": false,
+  "file_count": 46,
+  "total_bytes": 278731634,
+  "files": [
+    {
+      "file": "app.js",
+      "bytes": 34251,
+      "sha256": "c90c6799137d57d6513e91727c30bb09c06b6038f178016b29dd5c82b8121ac0"
+    },
+    {
+      "file": "assets/card-shot.glb",
+      "bytes": 31379028,
+      "sha256": "6e64be38118f15031818d17e3edea0e4e1e38b023cc763d4172fcea42a96bb68"
+    },
+    {
+      "file": "assets/celebration-messi.glb",
+      "bytes": 17150128,
+      "sha256": "df88facce4ebd753661cc6b69abb6ff3344da9cc30675ad813a3b531fe0698a3"
+    },
+    {
+      "file": "assets/celebration-qr.png",
+      "bytes": 1471,
+      "sha256": "3be225cbd462fc7440b75f251915cb6b3d9b1ad8739d91ba6011a70e434cfd65"
+    },
+    {
+      "file": "assets/celebration-qr.svg",
+      "bytes": 19795,
+      "sha256": "dc26c90c60a315822f8523ce8e70cfaa37bd13f73c172ef00fabed642ebe9989"
+    },
+    {
+      "file": "assets/diorama-celebration.glb",
+      "bytes": 37411352,
+      "sha256": "67221d1bb73a66b036dc7263d3df314bf783d3d1ba4e6e8f61facff6dadde744"
+    },
+    {
+      "file": "assets/experience-qr.png",
+      "bytes": 1471,
+      "sha256": "ce0b7e1eef310e75ad076c244058774facf120ad7b7d27ea7e00e795f087c2e8"
+    },
+    {
+      "file": "assets/experience-qr.svg",
+      "bytes": 20802,
+      "sha256": "e4002c9004d7a330802bf685185fcc8bedd5193cd42b3c17fdb61855aca5c376"
+    },
+    {
+      "file": "assets/shot-messi.glb",
+      "bytes": 17778612,
+      "sha256": "53bbcfe7db6bc5f2e1266bdf9eb424e28b2e45dd21d70c785bd7546b9eeaf78e"
+    },
+    {
+      "file": "delivery/nfc-celebration-url.txt",
+      "bytes": 71,
+      "sha256": "b19c2346033df3224c3ec84682eab67fa1e8ade360f2b8a7d0bd282fae330f24"
+    },
+    {
+      "file": "delivery/nfc-celebration.ndef",
+      "bytes": 67,
+      "sha256": "e9b6861eff327ab4817416da12ed99ce5e63a97d65ed03ea8ada664b2b9c545f"
+    },
+    {
+      "file": "delivery/nfc-chip-url.txt",
+      "bytes": 64,
+      "sha256": "6d2b225a6049d1eee631657b228f23affbf075609ee770d6559383dc32fec09e"
+    },
+    {
+      "file": "delivery/nfc-chip.ndef",
+      "bytes": 60,
+      "sha256": "8207c8f94020d97335613ed96a6938555581f6b8c7b59b215ffdd5875f079622"
+    },
+    {
+      "file": "delivery/制作与打样说明.html",
+      "bytes": 10625,
+      "sha256": "1898c802f2cb71a32311bad864b9fa2f95a6af4c6ad8b2d2036a60aef6579649"
+    },
+    {
+      "file": "index.html",
+      "bytes": 14905,
+      "sha256": "e1b0241360b59d74a9a021408022698649e285124f06fbdbf1646b31da2d4923"
+    },
+    {
+      "file": "lib/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "file": "lib/addons/controls/OrbitControls.js",
+      "bytes": 29868,
+      "sha256": "5a44a9e86a2a0fb11933eed69bc2cd33c76a496854c1aed6ed776efa87d7b064"
+    },
+    {
+      "file": "lib/addons/loaders/GLTFLoader.js",
+      "bytes": 108522,
+      "sha256": "d073b438e6a07e1359741dd5d6c76c953420cc0d4fd84eb1bdde94315540e6a3"
+    },
+    {
+      "file": "lib/addons/utils/BufferGeometryUtils.js",
+      "bytes": 31906,
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb"
+    },
+    {
+      "file": "lib/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "file": "media/celebration-game.mp4",
+      "bytes": 8954073,
+      "sha256": "75e7b0e64847847798156b8bc9369d963d7e880a8c429646ebb6dd1b203d894c"
+    },
+    {
+      "file": "media/celebration-real.mp4",
+      "bytes": 17035261,
+      "sha256": "006e4183285fdd6e64850af9516624d53b823e416a12296ae99575d07b23bb74"
+    },
+    {
+      "file": "media/comparison-poster.jpg",
+      "bytes": 258026,
+      "sha256": "75eb729fe132057e93f61da8145bfc2bc07b87d059610ab79a4d9c06dddfc659"
+    },
+    {
+      "file": "media/comparison.mp4",
+      "bytes": 8007841,
+      "sha256": "5980eb6de2443d8de17e070d052a0eb2554822155924e3696af8f471a3fabdcc"
+    },
+    {
+      "file": "media/game-celebration.jpg",
+      "bytes": 261826,
+      "sha256": "32ba6e86372fe91f64c65b5a62249855bf840326ac4f70b4327300a8f908ddbb"
+    },
+    {
+      "file": "media/game-moment.mp4",
+      "bytes": 8999931,
+      "sha256": "26fc2f65d7c6ca1f9a600736439f2ecdb0e00822c3f7e7ef8b03f99fddd2fa2c"
+    },
+    {
+      "file": "media/game-shot.jpg",
+      "bytes": 190487,
+      "sha256": "ed7d90e01cf5f127a56f515190cd5668da32914dc6a5e69d2b04226e817d5d93"
+    },
+    {
+      "file": "media/real-celebration.jpg",
+      "bytes": 157770,
+      "sha256": "3cc13f4b5aa6416154bc403d6f1f713ea19b27221e1074e8415bd87d85586550"
+    },
+    {
+      "file": "media/real-shot.jpg",
+      "bytes": 262656,
+      "sha256": "b65036527415690aa1077a4fe8c2f1489e62ffb6feb666339bf226a5bc7c46f5"
+    },
+    {
+      "file": "media/reference-game-40s.mp4",
+      "bytes": 34661070,
+      "sha256": "297a28c451399abcf5c14ad934d910b17f473aba3702accd1d6cf48001700cf2"
+    },
+    {
+      "file": "media/reference-real-40s.mp4",
+      "bytes": 61108303,
+      "sha256": "856cd88b74f7f6f5844abafe7b9cd92d3789fe9b7869aa934aa849f9add2db98"
+    },
+    {
+      "file": "media/shot-real.mp4",
+      "bytes": 11955938,
+      "sha256": "07e28e9865857ecf429ddc5ba1fbcfb5cd40f160c4bcd166a0d443215ef3ea20"
+    },
+    {
+      "file": "renders/card-detail.png",
+      "bytes": 2839826,
+      "sha256": "0aa25dd91d11f575c848cb76ac1dec664165f14efd54276b8decf413db5802d1"
+    },
+    {
+      "file": "renders/card-front.png",
+      "bytes": 2537603,
+      "sha256": "d6f8f729a8c31504d5cc14f6a6654f73967de7493cd0e4d7f76b215dfe2b28b8"
+    },
+    {
+      "file": "renders/card-rear.png",
+      "bytes": 2157748,
+      "sha256": "01202d87d86441eaec3839450cbd583ae7a2c52597879ea63f8d5d8cdde74f7d"
+    },
+    {
+      "file": "renders/diorama-detail.png",
+      "bytes": 2448048,
+      "sha256": "a9d4186760fac5d9e949fe39b265292fe0899d378e5d8bcc51cf0b9ff94b6536"
+    },
+    {
+      "file": "renders/diorama-front.png",
+      "bytes": 2310400,
+      "sha256": "1ec160bdadb25df19abb900168f28ed1fd6b3b6e1302e02912bd30db517be8cd"
+    },
+    {
+      "file": "renders/diorama-rear.png",
+      "bytes": 2370190,
+      "sha256": "0c9da7382de1d59da5e03952d2045d875567891ffc2f6901d5f1f02d45503827"
+    },
+    {
+      "file": "renders/hero-card.png",
+      "bytes": 2543226,
+      "sha256": "cbc23b3824616711584ba4514d3e0c2d7fc8ed79146b16e4f07a115f1c064d28"
+    },
+    {
+      "file": "renders/hero-diorama.png",
+      "bytes": 2377223,
+      "sha256": "e1aeb1375415859319d316cf09614732a3ddce099b1aa6987ca8c10f9e8ab8a3"
+    },
+    {
+      "file": "renders/pair.png",
+      "bytes": 1986643,
+      "sha256": "4b056009e035865eeda3409f69acd705c18608fbbb5970e9804032daacb981e3"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 23271,
+      "sha256": "49b27a3b6a7c7c875a72a76dcae2ad6fa67a0c86ed05a08355c9b8627761ca03"
+    },
+    {
+      "file": "product-contract.json",
+      "bytes": 2713,
+      "sha256": "f2f4428ab11d1d124f8fa6ff7206f12973a27a14ab2d0c595548d1138512b5eb"
+    },
+    {
+      "file": "evidence/media-provenance.json",
+      "bytes": 11206,
+      "sha256": "5738343987c67afc5ab1ab13c3c2ea77bc6eea37a6b099aaf2246c8526ddfb87"
+    },
+    {
+      "file": "evidence/media-official-match-facts.json",
+      "bytes": 2107,
+      "sha256": "2a57063ae7e3d0256645276eaa8264800369daecf52e99083d4c9adaa3a00be4"
+    },
+    {
+      "file": "evidence/qr-nfc-data-check.json",
+      "bytes": 1197,
+      "sha256": "2c7e07e717f94e01e28446aed363468abfe71b81246ec958b231ddb0f75e46cf"
+    }
+  ]
+}
