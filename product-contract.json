@@ -43,25 +43,30 @@
   "printing": {
     "player_height_mm": 180,
     "card_mm": [
-      100,
-      150,
-      20
+      100.0,
+      150.0,
+      34.2
     ],
     "plinth_mm": [
       280,
       220
     ],
-    "status": "digital sample candidate; no physical print acceptance"
+    "status": "digital sample candidate; no physical print acceptance",
+    "dimensions_basis": "Assembled display model bounds; print-specific support variants and physical tolerances remain separate"
   },
   "future": {
     "4dgs": "not produced; future research",
     "interactive_game": "current lightweight parameter-driven prototype"
   },
-  "content_status": "Private development/prototype assets. Source licenses and player/club usage clearance not asserted.",
+  "content_status": "Public non-official digital product prototype. Source licenses and player/club usage clearance not asserted.",
   "experience": {
     "public_url": "https://bnj-apl.github.io/goal-moment-3d/",
-    "verified": false,
-    "deployment": "Pending full local acceptance; no remote website has been changed yet"
+    "verified": true,
+    "deployment": "GitHub Pages gh-pages core published and checked from the HTTPS public URL",
+    "verified_at": "2026-11-17T01:06:27.970263+00:00",
+    "browser_verification": "Core interactions passed; 60-second forced-failure retry first timed out, independent retry completed in44.8seconds without page errors",
+    "mobile_validation": "390px touch emulation; no physical phone or NFC tag test",
+    "large_model_note": "3D models are loaded only on request; first download can take tens of seconds"
   },
   "lux3d": {
     "candidate_generated": true,

@@ -1,8 +1,8 @@
 {
   "site": "https://bnj-apl.github.io/goal-moment-3d/",
   "product_film_included": false,
-  "file_count": 46,
-  "total_bytes": 278731634,
+  "file_count": 47,
+  "total_bytes": 280853399,
   "files": [
     {
       "file": "app.js",
@@ -180,6 +180,11 @@
       "sha256": "01202d87d86441eaec3839450cbd583ae7a2c52597879ea63f8d5d8cdde74f7d"
     },
     {
+      "file": "renders/diorama-bottom-qr.png",
+      "bytes": 2121203,
+      "sha256": "6c388ce22f3cac4a21edc88d6a287e382c459244137be413a96bf917db4fb5ad"
+    },
+    {
       "file": "renders/diorama-detail.png",
       "bytes": 2448048,
       "sha256": "a9d4186760fac5d9e949fe39b265292fe0899d378e5d8bcc51cf0b9ff94b6536"
@@ -216,8 +221,8 @@
     },
     {
       "file": "product-contract.json",
-      "bytes": 2713,
-      "sha256": "f2f4428ab11d1d124f8fa6ff7206f12973a27a14ab2d0c595548d1138512b5eb"
+      "bytes": 3275,
+      "sha256": "34215f1ccbe85e627e6a234f9c520e4cc5448b3a082f2eac2ab757bb32a0d3c1"
     },
     {
       "file": "evidence/media-provenance.json",
