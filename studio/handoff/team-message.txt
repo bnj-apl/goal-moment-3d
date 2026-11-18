@@ -1,0 +1,10 @@
+大家好，Moment90 最新完整演示和接手资料已整理好。
+
+这轮跑通了：原片模拟直播 → 捕捉真实一帧 → 生成带编号、截帧和二维码的三维周边 → 专属链接回看原片、3D 电影和可旋转模型。包含梅西独立举手欢呼、人物近景、诺坎普 V3，以及 27 秒 V3 产品片。
+
+先看队友告知页：https://bnj-apl.github.io/goal-moment-3d/studio/handoff/
+直接体验：https://bnj-apl.github.io/goal-moment-3d/studio/
+让 Codex 接手：https://bnj-apl.github.io/goal-moment-3d/studio/handoff/codex.html
+完整本轮运行包：https://github.com/bnj-apl/moment90-team-workspace/releases/tag/studio-handoff-2026-11-19
+
+当前三维人物使用精修模板；真实直播接入、任意视频自动重建、实体打印与 NFC 真机触碰、动态 4DGS 仍待完成。请以 11 月 19 日交接为最新集成说明，11 月 17 日私有大素材包用于历史工程。需要私有包的同学使用自己的获授权 GitHub 账号。

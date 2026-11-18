@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-18",
+  "public_url": "https://bnj-apl.github.io/goal-moment-3d/studio/",
+  "commit": "2446b635066e2b662aadb454a45b35d1ff3e7da1",
+  "checks": {
+    "source_capture_actual_ui": {
+      "frame": 451,
+      "seconds": 18.04,
+      "id": "M90-C451-FEE679CB0324"
+    },
+    "personalized_plaque_visible": true,
+    "glb_export_contains_recipe_and_plaque": true,
+    "actual_card_qr_decoded": true,
+    "ndef_matches_qr": true,
+    "independent_browser_url_restore": true,
+    "mobile_390px_layout": true,
+    "solo_celebration_model": true,
+    "figure_closeup": true,
+    "stadium_instanced_load_and_interior": true,
+    "contract_tests_passed": 5,
+    "public_https_recipe_restore": true,
+    "public_original_video_playback": true,
+    "public_interactive_celebration_model_loaded": true
+  },
+  "limitations": [
+    "No real live stream integration",
+    "No physical NFC write/tap test",
+    "No physical print test",
+    "Curated static pose templates, not arbitrary-frame 3D reconstruction",
+    "Existing cinematic has separate timing; not dynamic 4DGS"
+  ],
+  "production_verification": "Passed: deployed HTTPS page restored dedicated D451 recipe, played original video, and loaded interactive celebration model. Physical phone/NFC test remains outside this round.",
+  "production_build": {
+    "status": "built",
+    "commit": "2446b635066e2b662aadb454a45b35d1ff3e7da1",
+    "updated_at": "2026-11-18T15:52:33Z"
+  }
+}
