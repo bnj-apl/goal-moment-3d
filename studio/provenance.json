@@ -1,0 +1,81 @@
+{
+  "release": "2026-11-18",
+  "experience": "simulated live capture → curated collectible with actual frame → dedicated QR/NFC link → source replay + interactive 3D",
+  "assets": [
+    {
+      "path": "media/match.mp4",
+      "description": "2015 比赛原片，40 秒，25fps",
+      "bytes": 61108303,
+      "sha256": "856cd88b74f7f6f5844abafe7b9cd92d3789fe9b7869aa934aa849f9add2db98"
+    },
+    {
+      "path": "media/cinematic.mp4",
+      "description": "既有 LibTV 比赛动感修订版，进球与独立举手庆祝，9.208 秒",
+      "bytes": 11899216,
+      "sha256": "d0b36240c468e63e1b0a653763e664ed2afa29aa84c74577e40edca59848ca2b"
+    },
+    {
+      "path": "media/product-film.mp4",
+      "description": "既有 Moment90 V3 人物修订宣传片，27 秒",
+      "bytes": 20128443,
+      "sha256": "616d43f3956298d786c59d5d5b68a44d174a77e59e0a4492614860565a119139"
+    },
+    {
+      "path": "models/chip.glb",
+      "description": "既有挑射精修姿态卡",
+      "bytes": 31379028,
+      "sha256": "6e64be38118f15031818d17e3edea0e4e1e38b023cc763d4172fcea42a96bb68"
+    },
+    {
+      "path": "models/celebration.glb",
+      "description": "既有独立双手举起欢呼摆件",
+      "bytes": 37411352,
+      "sha256": "67221d1bb73a66b036dc7263d3df314bf783d3d1ba4e6e8f61facff6dadde744"
+    },
+    {
+      "path": "models/gold.glb",
+      "description": "既有黑金典藏设计，后期球衣版本",
+      "bytes": 35027292,
+      "sha256": "0b49585834f751f3a2ef56424c48a4f8ffee8ad27b3d7dfedb6ab3709851811d"
+    },
+    {
+      "path": "models/stadium-v3.glb",
+      "description": "诺坎普草坪光影 V3；几何与座椅位置保持，座椅批量绘制，网页贴图最高 1024",
+      "bytes": 68215040,
+      "sha256": "2408b40b73e663af042b3d963b08f4089d82a7cd64f3cbc8b9f57a7c98f8a4a5"
+    }
+  ],
+  "record": {
+    "sourceId": "messi2015-v1",
+    "frameRange": [
+      0,
+      999
+    ],
+    "fps": 25,
+    "persistence": "self-contained versioned URL recipe, local collection shelf",
+    "identity": "same source, frame, product and finish yield the same ID",
+    "checksumPurpose": "detect copied-link corruption, not an ownership certificate or secret signature"
+  },
+  "verifiedBoundary": {
+    "liveBroadcastConnected": false,
+    "arbitraryFrame3DReconstruction": false,
+    "dynamic4DGS": false,
+    "physicalNFCVerified": false,
+    "physicalPrintVerified": false
+  },
+  "generation": "No additional cloud generation used in this release. Existing refined assets selected for fidelity. Screenshot and plaque are generated in browser from actual source frame.",
+  "privacy": "No account, upload, or cloud storage required; shared links contain only source version, frame number, product and finish.",
+  "stadiumOptimization": {
+    "source_sha256": "ddb245f66c6ccab0bbb50be4ab25e8390f505ed53730412e9710c98c421e9d9d",
+    "output_sha256": "2408b40b73e663af042b3d963b08f4089d82a7cd64f3cbc8b9f57a7c98f8a4a5",
+    "original_bytes": 133676328,
+    "delivery_bytes": 68215040,
+    "geometry_and_non_image_buffer_views_preserved_byte_for_byte": 1038,
+    "image_limit": 1024,
+    "geometry_changed": false,
+    "seat_instances": 88030,
+    "seat_batches": 29,
+    "delivery_nodes": 48,
+    "placement_precision_metres": 1e-05
+  }
+}
