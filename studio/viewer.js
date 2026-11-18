@@ -49,7 +49,7 @@ export class MomentViewer {
   asset.position.sub(center);root.add(asset);if(!isStadium)root.scale.setScalar(2/Math.max(size.x,size.y,size.z));
   root.userData={assetVersion:'moment90-20261118-v1',sourceKind:isStadium?'existing-camp-nou-v3':'curated-pose-template-with-captured-frame',record:record||null};
   asset.userData={...asset.userData,...root.userData,unit:'metre'};
-  this.root=root;this.scene.add(root);this.exportAsset=asset;this.modelSize=size;this.modelCenter=center;this.ready=true;this.controls.autoRotate=false;this.controls.enablePan=isStadium;
+  this.root=root;this.scene.add(root);root.updateMatrixWorld(true);this.figureBox=new THREE.Box3();if(!isStadium)root.traverse(o=>{if(o.isMesh&&/card-player|diorama-player|Relief_Messi|Relief Messi/i.test(o.name))this.figureBox.expandByObject(o)});this.exportAsset=asset;this.modelSize=size;this.modelCenter=center;this.ready=true;this.controls.autoRotate=false;this.controls.enablePan=isStadium;
   this.camera.fov=isStadium?60:34;
   this.scene.background.set(isStadium?'#94aec5':'#141d26');this.scene.environmentIntensity=isStadium ? .38 : .6;this.hemi.intensity=isStadium?2.2:.65;this.key.intensity=isStadium?3:2;this.fill.intensity=isStadium ? .55 : .7;
   this.view(isStadium?'front':'reset');this.status(isStadium?'诺坎普 V3 已载入 · 拖动查看':'周边已合成 · 拖动旋转 / 双指缩放');return true;
@@ -58,14 +58,18 @@ export class MomentViewer {
   if(!this.root)return;this.controls.autoRotate=false;this.camera.up.set(0,1,0);
   if(this.stadium){
    // Use the authored V3 viewpoints, translated by the same centre as the model.
-   const views={front:[[48,16,28],[0,8,-8]],back:[[2,24,-34],[0,17,-75]],reset:[[300,270,330],[0,20,0]]};
+   const views={front:[[48,16,28],[0,8,-8]],back:[[2,24,-34],[0,17,-75]],detail:[[10,.65,9],[0,.12,0]],reset:[[300,270,330],[0,20,0]]};
    const [p,t]=views[kind]||views.reset;
    this.camera.position.fromArray(p).sub(this.modelCenter);this.controls.target.fromArray(t).sub(this.modelCenter);
    this.controls.minDistance=1;this.controls.maxDistance=900;this.camera.near=.1;this.camera.far=2000;
   }else{
    const r=Math.max(1,1/this.camera.aspect),views={front:[0,.05,4.2*r],back:[0,.05,-4.2*r],reset:[2.3*r,1.25*r,4*r]};
    if(kind==='back'&&this.record.p==='d'){this.camera.position.set(0,-4.6*r,.06);this.camera.up.set(0,0,1)}else this.camera.position.fromArray(views[kind]||views.reset);
-   this.controls.target.set(0,0,0);this.controls.minDistance=1.4;this.controls.maxDistance=10;this.camera.near=.05;this.camera.far=50;
+   this.controls.target.set(0,0,0);this.controls.minDistance=.4;this.controls.maxDistance=10;this.camera.near=.05;this.camera.far=50;
+   if(kind==='detail'&&!this.figureBox.isEmpty()){
+    const c=this.figureBox.getCenter(new THREE.Vector3()),s=this.figureBox.getSize(new THREE.Vector3()),distance=Math.max(s.y,s.x/this.camera.aspect)/(2*Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2)))*1.12+s.z*.5;
+    this.controls.target.copy(c);this.camera.position.copy(c).add(new THREE.Vector3(.12,0,1).normalize().multiplyScalar(distance));
+   }
   }
   this.camera.updateProjectionMatrix();this.controls.update();this.renderer.render(this.scene,this.camera);
  }

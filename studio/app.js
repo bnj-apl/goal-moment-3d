@@ -60,7 +60,7 @@ async function showMode(next){
   return;
  }
  $('model-loading').hidden=false;const isStadium=next==='stadium';$('viewer-label').textContent=isStadium?'CAMP NOU / TURF & LIGHT V3':'MOMENT90 / '+PRODUCTS[record.p].english;$('viewer-size').textContent=isStadium?'原场馆几何':PRODUCTS[record.p].size;
- $('view-front').textContent=isStadium?'场内':'正面';$('view-back').textContent=isStadium?'看台':'背面铭牌';$('view-reset').textContent=isStadium?'鸟瞰':'复位';
+ $('view-front').textContent=isStadium?'场内':'正面';$('view-detail').textContent=isStadium?'草坪':'人物近景';$('view-back').textContent=isStadium?'看台':'背面铭牌';$('view-reset').textContent=isStadium?'鸟瞰':'复位';
  $('mode-note').textContent=isStadium?'沿用诺坎普草坪光影 V3。场馆几何保持，贴图压缩以方便网页加载；不是 2015 年实测球场。':'可拖动旋转。背面铭牌包含本次截帧、编号和二维码；人物使用已精修的模板姿态。';
  try{const v=getViewer();v.visible=true;v.resize();if(await v.load(record,labelCanvas,isStadium)){$('model-loading').hidden=true;$('download-model').disabled=isStadium;state.modelReady=!isStadium;}}
  catch(e){if(e.name!=='AbortError'){viewerStatus(errorText(e),true);state.modelReady=false}}
@@ -89,7 +89,7 @@ $('generate').onclick=async()=>{
 async function restore(r,scroll=false){if(restoring||busy)return;restoring=true;try{$('passport').hidden=false;$('viewer-status').textContent='正在恢复这件收藏品的原始画面…';const canvas=await frameAt(r.n);await showRecord(r,canvas,scroll,'original')}catch(e){toast(errorText(e));$('viewer-status').textContent=errorText(e);$('passport').hidden=true;$('capture-status').textContent='恢复未完成：'+errorText(e)+' 可以重新抓取，或刷新链接重试。';document.body.classList.remove('arrival')}finally{restoring=false}}
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>showMode(b.dataset.mode));
 $('retry-model').onclick=()=>showMode(mode);
-for(const [id,name] of [['view-front','front'],['view-back','back'],['view-reset','reset']])$(id).onclick=()=>{viewer?.view(name);$('view-orbit').setAttribute('aria-pressed','false')};
+for(const [id,name] of [['view-front','front'],['view-detail','detail'],['view-back','back'],['view-reset','reset']])$(id).onclick=()=>{viewer?.view(name);$('view-orbit').setAttribute('aria-pressed','false')};
 $('view-orbit').onclick=()=>{if(!viewer?.ready)return;viewer.controls.autoRotate=!viewer.controls.autoRotate;$('view-orbit').setAttribute('aria-pressed',String(viewer.controls.autoRotate))};
 $('open-stadium').onclick=async()=>{
  if(busy)return;
